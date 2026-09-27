@@ -1,0 +1,373 @@
+/* ================================
+   CÀI ĐẶT CHUNG
+================================ */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #e3f2fd, #f5f7ff);
+    color: #222;
+}
+
+
+/* ================================
+   TIÊU ĐỀ
+================================ */
+
+h1 {
+    text-align: center;
+    color: #1565c0;
+    font-size: 42px;
+    margin-bottom: 8px;
+}
+
+body > p {
+    text-align: center;
+    color: #555;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+
+/* ================================
+   KHUNG CHÍNH
+================================ */
+
+.form {
+    width: 95%;
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ================================
+   TIÊU ĐỀ NHỎ
+================================ */
+
+h2 {
+    color: #1565c0;
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #1976d2;
+    margin-top: 25px;
+    margin-bottom: 12px;
+}
+
+
+/* ================================
+   Ô NHẬP THÔNG TIN
+================================ */
+
+.form > label {
+    display: block;
+    font-weight: bold;
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 11px 13px;
+    border: 1px solid #cfd8dc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+    border-color: #1976d2;
+    box-shadow: 0 0 5px rgba(25, 118, 210, 0.2);
+}
+
+
+/* ================================
+   MÔ TẢ SỞ THÍCH
+================================ */
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* ================================
+   SỞ THÍCH
+================================ */
+
+.sothich {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.sothich label {
+    display: block;
+    padding: 12px;
+    background: #f5f9ff;
+    border: 1px solid #dce8f7;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.sothich label:hover {
+    background: #e3f2fd;
+    border-color: #90caf9;
+}
+
+.sothich input[type="checkbox"] {
+    width: auto;
+    margin-right: 7px;
+}
+
+
+/* ================================
+   KHẢO SÁT
+================================ */
+
+.khaosat {
+    text-align: left;
+    margin-top: 20px;
+}
+
+
+/* ================================
+   TỪNG CÂU HỎI
+================================ */
+
+.cauhoi {
+    background: #f5f7fa;
+    padding: 17px;
+    margin: 15px 0;
+    border-radius: 12px;
+    border-left: 5px solid #42a5f5;
+}
+
+.cauhoi p {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+/* ================================
+   RADIO
+================================ */
+
+.cauhoi label {
+    display: inline-block;
+    margin: 5px 8px 5px 0;
+    padding: 7px 11px;
+    border-radius: 7px;
+    cursor: pointer;
+    background: white;
+    border: 1px solid #ddd;
+    transition: 0.2s;
+}
+
+.cauhoi label:hover {
+    background: #e3f2fd;
+    border-color: #64b5f6;
+}
+
+.cauhoi input[type="radio"] {
+    width: auto;
+    margin-right: 4px;
+}
+
+
+/* ================================
+   NÚT PHÂN TÍCH
+================================ */
+
+button {
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+
+    background: linear-gradient(
+        135deg,
+        #1976d2,
+        #42a5f5
+    );
+
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(25, 118, 210, 0.3);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+
+/* ================================
+   KẾT QUẢ
+================================ */
+
+#ketqua {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 14px;
+    background: #f8fbff;
+    border: 1px solid #d6e8fa;
+}
+
+
+/* ================================
+   KẾT QUẢ NGÀNH
+================================ */
+
+#ketqua h2 {
+    margin-top: 0;
+    color: #1565c0;
+}
+
+#ketqua h3 {
+    color: #1976d2;
+}
+
+#ketqua p {
+    line-height: 1.6;
+}
+
+#ketqua ul {
+    padding-left: 25px;
+}
+
+#ketqua li {
+    margin: 8px 0;
+}
+
+
+/* ================================
+   THẺ KẾT QUẢ
+================================ */
+
+.ketqua-item {
+    background: white;
+    padding: 15px;
+    margin: 12px 0;
+    border-radius: 10px;
+    border-left: 5px solid #1976d2;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+}
+
+.ketqua-item strong {
+    color: #1565c0;
+}
+
+
+/* ================================
+   TOP 3
+================================ */
+
+.top3 {
+    background: #e3f2fd;
+    padding: 18px;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+.top3 h3 {
+    margin-top: 0;
+}
+
+
+/* ================================
+   ĐIỂM SỐ
+================================ */
+
+.diem {
+    font-weight: bold;
+    color: #1565c0;
+}
+
+
+/* ================================
+   THÔNG BÁO
+================================ */
+
+.thongbao {
+    padding: 12px;
+    margin-top: 15px;
+    border-radius: 8px;
+    background: #fff8e1;
+    border: 1px solid #ffe082;
+    color: #795548;
+}
+
+
+/* ================================
+   RESPONSIVE - ĐIỆN THOẠI
+================================ */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px 8px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    body > p {
+        font-size: 16px;
+    }
+
+    .form {
+        width: 100%;
+        padding: 18px;
+        border-radius: 12px;
+    }
+
+    .sothich {
+        grid-template-columns: 1fr;
+    }
+
+    .cauhoi {
+        padding: 13px;
+    }
+
+    .cauhoi label {
+        padding: 6px 9px;
+        margin-right: 4px;
+    }
+
+    button {
+        font-size: 17px;
+    }
+}
